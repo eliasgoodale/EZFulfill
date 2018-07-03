@@ -1,0 +1,43 @@
+Terms:
+
+	Domain: 
+		Set of possible values for a given attribute comparible in statically typed languages to type.
+		Specifies the range of values that can be input for this particular field.
+	
+	Primary Key:
+		Uniquely specifies a tuple within a table. It must not repeat, primary keys may be defined but a surrogate key(id) is
+		always assigned if PK isnt specified could be an ID number, a single field in the tuple, or a composite of two or more
+		fields in the tuple.
+		
+	Foreign Key:
+		A field in the tuple that relates to a different primary key, can be used to cross reference tables. In practice,
+		it is a bookmark, allowing databases to be read in multiple ways.
+	
+
+Relational Model:
+
+	Organizes data into one or more tables(relations) of columns and rows, with a unique KEY identifying each row
+	Rows are called records, or tuples. Columns are called attributes. 
+	
+	Generally, each table/ relation represents one entity type, the rows represent instances of that type of entity
+	and columns represent values of that instance.
+
+	PK's within a database are used to define the relationships among the tables. When a PK migrates to another table,
+	it becomes a foreign key(FK) to the other entity tables. When each cell can contain only one value and the 
+	PK migrates into a regular entity table, this design pattern represents either the ONE_TO_ONE or ONE_TO_MANY relationship
+	A relational database design resolves MANY_TO_MANY relationships by creating an additional table that containes the PK's 
+	from both of the other entity tables. This relationship becomes an entity itself, named something appropriate as a resolution
+	table. Then the two FK's are combined to form a PK, this allows a unique composite key and a relational class handler
+
+
+	Row: Tuple or record, a data set that represents a single item
+	Column: Attribute or field, a labled element of a tuple (Address / Date)
+	Table: Relation, A set of tuples sharing the same attributes(set of columns and rows)
+	View: and set of tuples, data report in response to query
+	SuperKey: in the case of no primary key, the data(tuple) itself is unique and can be used as a SuperKey
+
+	Base Relations:
+		Indexing:
+
+
+

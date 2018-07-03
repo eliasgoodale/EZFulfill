@@ -1,0 +1,102 @@
+APPLICATION:
+    name: EZFulfill
+    specs:  []  Modular
+            []  Embedded
+            []  Platform Dependent
+            []  Scalable
+
+
+TERMS:
+    ON - Order Number: contains all the items for 1 order
+    SKU - Stock Keeping Unit
+    TkC - Tracking company
+    TkN - Tracking Number
+    TkU - Tracking URL
+
+    Brick and Mortar - store has physical location (all examples)
+    3PL - 3rd party logistics (3rd party fulfillment software in this case)
+
+    customer - A person, business, or entity with a history of orders > 0
+    embedded application - app is a part of the shopify admin
+
+    shopify embedded app sdk - software that allows you to access the application
+    within the shopify admin as part of your store.
+
+    Microservices - When making applications, allow them to be as modular as possible
+        Design pattersn
+
+PROBLEM:
+    Have many orders with many ON's, SKU's, TkC's, TkN's, and TkU's. We want to
+    take in a CSV file with provided info:
+                                            - Order Number
+                                            - Item Qty
+    And fulfill those orders by {Item Qty?}
+
+    Questions:
+
+        Scalability:
+        
+            How do you do most of your business? Platforms? Web ONLY?
+
+            Do you plan on opening other types of stores and integrating
+            this software with them?
+
+            How many orders do you usually have weekly?
+
+            How many products do you have? How do you inventory/sort the products?
+                -GET CSV example of how they import products to shopify
+    
+            How many customers do you have weekly?
+
+            How many orders do you fulifill weekly?
+
+            Is this app's construction a response to growing needs?
+            If so how can we allow it to scale with your business?
+
+            Will it always run on the same platform? 
+
+            How modular is this application? Will it be extended as a part of another application later? If so perhaps this is a Microservices
+            project.
+
+        Logistics:
+
+            What are the deadlines for this apps production, testable, and design phase?
+
+
+            Is this app private? public? embedded? or separate entity?
+                -Advantages of embedded app sdk:
+                    >solves many scalibility issues
+                    >makes application easy and intuitive to use
+                    >integrates authorization for easy installation and permissions handling
+            
+            If this application is private and non-embedded what platform does it run on? 
+
+            What additional functionality do you want? Describe the functionality
+            you want in detail.
+
+            Do you want to be able to read in only csv file or other column/row based document types?
+
+            In your csv file are there just two fields? Order Number and Quantity? Or are there more? How can we simplify the design with input parameters?
+
+            Define the scopes/permissions for the app (Do we need to be able to 
+            read orders / write orders only? What other information inside of the store will we need access to?)
+
+
+        Compensation:
+            What compensation do you offer for this app? Monitary? Equity? Do you want to pay a monthly fee(3PL service)? 
+            Do you want to own this application? (Discuss IP rights and transfer)
+
+            How do you want to pay us for developing this application? (I assume work for hire.)
+
+
+
+SOLUTION:
+    >Language Ruby
+        - Framework: Rails
+        - Engine/Generators: https://github.com/Shopify/shopify_app#default-generator
+        - 
+
+
+
+
+

@@ -1,0 +1,14 @@
+Docker
+
+Containerized solution to software programs: more lightweight than a VM, Allows programs to have their own isolated: CPU, memory, block, I/O, and network resources.
+	> Does not run duplicate instances of the same OS
+	> Does not run redundant boot volumes
+
+Typically a good solution for applications with web-scale requirements.
+
+Containers:
+
+cgroups - control groups: Govern isolation and usage of system resources between programs.
+
+namespaces - Govern resource isolation for a single process.
+

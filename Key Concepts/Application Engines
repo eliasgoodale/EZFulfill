@@ -1,0 +1,10 @@
+Engines are mini applications that provide functionality to their host applications 
+
+A rails application derives many of its functions from the rails engine,
+this makes them almost the same thing with subtle differences
+
+class Rails::Application : Rails::Engine {
+	private:
+
+	public:	
+}
