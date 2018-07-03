@@ -91,10 +91,9 @@ PROBLEM:
 
 
 SOLUTION:
-    >Language Ruby
-        - Framework: Rails
-        - Engine/Generators: https://github.com/Shopify/shopify_app#default-generator
-        - 
+    >Language Python 3
+        - Framework: Django
+        - Engine/Generators: https://github.com/Shopify/shopify_django_app
 
 
 
